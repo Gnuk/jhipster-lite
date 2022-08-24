@@ -13,6 +13,7 @@ import { stubAlertBus } from '../../../common/domain/AlertBus.fixture';
 import { ProjectFoldersRepository } from '@/module/domain/ProjectFoldersRepository';
 import { ProjectFoldersRepositoryStub, stubProjectFoldersRepository } from '../../domain/ProjectFolders.fixture';
 import { stubWindow } from '../GlobalWindow.fixture';
+import { describe, it, expect } from 'vitest';
 
 interface WrapperOptions {
   modules: ModulesRepository;

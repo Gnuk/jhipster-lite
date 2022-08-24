@@ -11,6 +11,7 @@ import { defaultLandscape } from '../../domain/landscape/Landscape.fixture';
 import { ModulesRepositoryStub, projectHistoryWithInit, stubModulesRepository } from '../../domain/Modules.fixture';
 import { ProjectFoldersRepositoryStub, stubProjectFoldersRepository } from '../../domain/ProjectFolders.fixture';
 import { stubWindow } from '../GlobalWindow.fixture';
+import { describe, it, expect, vi } from 'vitest';
 
 interface ApplicationListenerStub extends ApplicationListener {
   addEventListener: SinonStub;
@@ -560,7 +561,7 @@ describe('Landscape', () => {
       const wrapper = wrap({ modules });
       await flushPromises();
 
-      const consoleErrors = jest.spyOn(console, 'error').mockImplementation();
+      const consoleErrors = vi.spyOn(console, 'error').mockImplementation();
       await updatePath(wrapper);
 
       expect(console.error).toHaveBeenCalledTimes(0);
