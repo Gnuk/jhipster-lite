@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "axios": "0.27.2",
-    "bootstrap": "5.2.0",
+    "bootstrap": "5.2.1",
     "bootstrap-icons": "1.9.1",
     "mitt": "3.0.0",
     "vue": "3.2.37",
@@ -45,7 +45,7 @@
     "@prettier/plugin-xml": "2.2.0",
     "@rushstack/eslint-patch": "1.1.4",
     "@tikui/core": "2.2.0",
-    "@types/bootstrap": "5.2.3",
+    "@types/bootstrap": "5.2.4",
     "@types/jest": "27.5.0",
     "@types/sinon": "10.0.13",
     "@typescript-eslint/parser": "5.35.1",
