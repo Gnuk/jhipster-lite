@@ -22,27 +22,6 @@ export default defineConfig({
     outDir: '../../../target/classes/static',
   },
   root: 'src/main/webapp',
-  server: {
-    port: 9000,
-    proxy: {
-      '/api': {
-        ws: true,
-        changeOrigin: true,
-        target: 'http://localhost:7471',
-      },
-      '/style': {
-        ws: true,
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/style/, ''),
-        target: 'http://localhost:9005',
-      },
-      '/reload': {
-        ws: true,
-        changeOrigin: true,
-        target: 'http://localhost:9005',
-      },
-    },
-  },
   css: {
     preprocessorOptions: {
       scss: {
