@@ -238,7 +238,7 @@ const restModuleHistory = (): RestProjectHistory => ({
   properties: appliedModuleProperties(),
 });
 
-const appliedModuleProperties = (): {} => ({ baseName: 'settedbase' });
+const appliedModuleProperties = (): Record<string, never> => ({ baseName: 'settedbase' });
 
 const restModuleProperties = (): RestModulePropertiesDefinitions => ({
   definitions: [
